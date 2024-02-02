@@ -13,8 +13,7 @@ media
 
 django_project/__pycache__/*
 
-accounts/migrations/*
-posts/migrations/*
+content/migrations/*
 
 schema.yml
 
