@@ -16,3 +16,8 @@ class Post(models.Model):
     author = models.ForeignKey(CustomUser, related_name='posts', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     body = models.TextField(blank=True, null=True)
+
+
+class Photo(models.Model):
+    post = models.ForeignKey(Post, related_name='photos', on_delete=models.CASCADE)
+    image = models.ImageField(upload_to="%Y/%m/%d")
