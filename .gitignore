@@ -14,6 +14,7 @@ media
 django_project/__pycache__/*
 
 content/migrations/*
+2024/
 
 schema.yml
 
