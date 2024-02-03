@@ -4,7 +4,8 @@ from .models import CustomUser, Post, Photo
 from .serializers import UserSerializer, PostSerializer, PhotoSerializer
 
 class UserListView(generics.ListCreateAPIView):
-    permission_classes = [permissions.AllowAny]
+    authentication_classes = ()
+    permission_classes = ()
     queryset = CustomUser.objects.all()
     serializer_class = UserSerializer
 
